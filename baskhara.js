@@ -43,3 +43,25 @@ else{
     console.log(x2)
 }
 }
+    window.onload = function(){
+
+document.getElementById('resultados').innerHTML = 'Os resultados são ' + x1+ ' e ' + x2 + ' para a = ' + a + ', b = ' + b + ' e c = ' + c + '.'
+
+document.getElementById('substituicao').innerHTML = 'Substituição:   {-(' + b + ') +/- √[' + b + '^2 - 4*' + a + '*' + c + ']} / {2*' + a  + '}'
+document.getElementById('p1').innerHTML = '1o passo:    {' + -b + ' +/- √[' + b**2 + ' - ' + 4*a*c + ']} / {' + baixo  + '}'
+
+document.getElementById('p2').innerHTML = '2o passo:   {' + -b + ' +/- √' + delta + '} / {' + baixo + '}'
+
+document.getElementById('raiz').innerHTML = 'Resolução da raiz:   {' + -b + ' +/- ' + (Math.sqrt(delta)) + '} / {' + baixo + '}'
+  
+document.getElementById('cima1').innerHTML = '1a opção (+):     {' + cima1 + '} / {' + baixo + '}'
+
+document.getElementById('cima1,2').innerHTML = '1a opção (+):    ' + x1
+
+document.getElementById('cima2').innerHTML = '2a opção (-):     {' + cima2 + '} / {' + baixo + '}'
+
+document.getElementById('cima2,2').innerHTML = '2a opção (-):    ' + x2
+
+
+
+}
